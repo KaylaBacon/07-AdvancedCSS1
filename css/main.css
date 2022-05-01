@@ -1,10 +1,13 @@
 {box-sizing: border-box;}
 
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 100; 
     background-color: dimgray;
+    width: 100vw;
 }
 
 .learn{
@@ -351,11 +354,16 @@ text-align: center;
     
     
 }
-
-
+@media only screen and (max-width 601px){
+    header{
+          background-color: #ff99ac;
+    padding: 1px;
+    margin: -10px;
+    max-width: 100%;
+    }
 
 @media only screen and (max-width 601px){
-  #nav {
+  .nav {
     margin-left: -8px;
     padding: 0px;
     background-color: black;
@@ -390,10 +398,51 @@ display:inline;
 }
 
 
+.googlemaps{
+   text-align: center;
+}
 
 
 
+.table{
+    border-radius: 10px;
+    border: solid 2px pink;
+    box-shadow: 10px 5px 20px gray;
+}
+.pricing {
+    border-collapse: collapse;
+    font-size: 15px;
+    width: 100%
+}
+.pricing th {
+    text-align: left;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .5rem 45px .5rem 10px;
+}
 
+.pricing td {
+    padding: .5rem 45px .5rem 15px;
+}
+
+.pricing tr:nth-child(even) {
+    background-color: grey;
+}
+
+.pricing tr:nth-child(odd) {
+    background-color: white;
+
+}
+
+
+.pricing tr:hover {
+    background-color: deeppink;
+    color: white;
+    transition: 100ms;
+
+}
 
 
 
